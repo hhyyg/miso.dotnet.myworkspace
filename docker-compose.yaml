@@ -1,0 +1,8 @@
+version: '3'
+services:
+  sample-app:
+    image: mcr.microsoft.com/dotnet/core/sdk:2.2
+    volumes:
+      - ./:/workspace
+    working_dir: /workspace
+    tty: true
